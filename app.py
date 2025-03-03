@@ -43,7 +43,7 @@ def main():
     if st.button("Fetch Data"):
         with st.spinner("Fetching player data..."):
             try:
-                player_data = fetch_player_data(player_tag,api_key)
+                player_data = fetch_player_data(player_tag)
                 if player_data:
                     st.success("Player data fetched successfully!")
                     
