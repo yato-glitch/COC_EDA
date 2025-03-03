@@ -12,7 +12,6 @@ logging.basicConfig(level=logging.DEBUG)
 def main():
     st.set_page_config(page_title="Clash of Clans EDA", layout="wide")
     
-    api_key = st.secrets["general"]["api_key"]
     col1, col2 = st.columns([1, 1])
     with col1:
         st.image("https://github.com/yato-glitch/COC_EDA/raw/main/857565.jpg", width=450)
@@ -44,7 +43,7 @@ def main():
     if st.button("Fetch Data"):
         with st.spinner("Fetching player data..."):
             try:
-                player_data = fetch_player_data(player_tag, api_key)
+                player_data = fetch_player_data(player_tag,api_key)
                 if player_data:
                     st.success("Player data fetched successfully!")
                     
