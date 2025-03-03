@@ -12,7 +12,7 @@ def main():
    
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.image("C:/Users/bhard/Desktop/coc_edaproject/857565.jpg", width=450)
+        st.image("https://github.com/yato-glitch/COC_EDA/blob/main/857565.jpg", width=450)
     with col2:
         st.image("C:/Users/bhard/Desktop/coc_edaproject/782659.jpg", width=450)
     
