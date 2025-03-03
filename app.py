@@ -14,7 +14,7 @@ def main():
     with col1:
         st.image("https://github.com/yato-glitch/COC_EDA/blob/main/857565.jpg", width=450)
     with col2:
-        st.image("C:/Users/bhard/Desktop/coc_edaproject/782659.jpg", width=450)
+        st.image("https://github.com/yato-glitch/COC_EDA/blob/main/782659.jpg", width=450)
     
     st.markdown("""
         <h1 style='text-align: center; color: white;'>Clash of Clans Player Analysis & Strategy Recommendations</h1>
