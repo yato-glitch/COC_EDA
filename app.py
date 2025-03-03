@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from fetch_api import fetch_player_data  
+from fetch_api import fetch_player_data  # The API key is handled inside this file
 from eda_coc import plot_troop_levels, plot_trophy_progression, plot_clan_contributions  
 from recommendation import get_base_army_compositions
 import logging
@@ -39,10 +39,11 @@ def main():
     if not player_tag:
         st.warning("Please enter a valid player tag.")
         return
-    
+
     if st.button("Fetch Data"):
         with st.spinner("Fetching player data..."):
             try:
+                # Fetch player data without passing the api_key
                 player_data = fetch_player_data(player_tag)
                 if player_data:
                     st.success("Player data fetched successfully!")
@@ -88,4 +89,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-
