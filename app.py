@@ -52,7 +52,7 @@ def main():
                 if avatar_url:
                     st.image(avatar_url, width=150)
                 else:
-                    st.image(https://github.com/yato-glitch/COC_EDA/raw/main/avatar.jpg, width=150)
+                    st.image("https://github.com/yato-glitch/COC_EDA/raw/main/avatar.jpg", width=150)
                 
                 st.write(f"**Name**: {player_data.get('name', 'Unknown')}")
                 st.write(f"**Tag**: {player_data.get('tag', 'Unknown')}")
