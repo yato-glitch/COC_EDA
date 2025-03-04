@@ -2,12 +2,9 @@ import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from fetch_api import fetch_player_data  # The API key is handled inside this file
+from fetch_api import fetch_player_data  
 from eda_coc import plot_troop_levels, plot_trophy_progression, plot_clan_contributions  
 from recommendation import get_base_army_compositions
-import logging
-
-logging.basicConfig(level=logging.DEBUG)
 
 def main():
     st.set_page_config(page_title="Clash of Clans EDA", layout="wide")
@@ -43,7 +40,7 @@ def main():
     if st.button("Fetch Data"):
         with st.spinner("Fetching player data..."):
             try:
-                # Fetch player data without passing the api_key
+              
                 player_data = fetch_player_data(player_tag)
                 if player_data:
                     st.success("Player data fetched successfully!")
